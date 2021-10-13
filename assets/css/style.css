@@ -1,0 +1,522 @@
+@font-face {
+  font-family: "Gilroy-Regular";
+  src: url(../fonts/Gilroy-Regular.ttf);
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy-Bold";
+  src: url(../fonts/Gilroy-Bold.ttf);
+  font-weight: 700;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Gilroy-Regular";
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 47px 0 43px;
+}
+
+.header {
+  background-image: url(../img/Banner.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+  padding: 26px 0 66px;
+  position: relative;
+}
+
+.pattern {
+  position: absolute;
+}
+
+.pattern.left {
+  left: 405px;
+  top: 516px;
+}
+
+.pattern.right {
+  left: 1358px;
+  top: 628px;
+}
+
+.top {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 36px;
+}
+
+.top h3 {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 400;
+  max-width: 837px;
+  width: 100%;
+}
+
+.title {
+  font-family: "Gilroy-Bold";
+  font-style: normal;
+  font-size: 50px;
+  line-height: 60px;
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.title span {
+  color: #fce558;
+}
+
+.title::after {
+  content: "";
+  width: 83.15px;
+  height: 2px;
+  background-color: #fad264;
+  position: absolute;
+  bottom: -24px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.subtitle {
+  max-width: 730px;
+  width: 100%;
+  margin: 0 auto;
+  font-size: 24px;
+  line-height: 28px;
+  margin-bottom: 41px;
+}
+
+.subtitle span {
+  font-family: "Gilroy-Bold";
+  text-transform: uppercase;
+}
+
+.info_cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 285px;
+  min-height: 125px;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: rgba(255, 255, 255, 0.781);
+  padding: 20px 15px;
+  margin: 0 33px 40px 0;
+  position: relative;
+}
+
+.card p {
+  font-size: 18px;
+  line-height: 21px;
+  color: #000;
+}
+
+.card::after {
+  content: "";
+  background-image: url(../img/star.png);
+  width: 44px;
+  height: 44px;
+  position: absolute;
+  top: -20px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.date {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.date p {
+  font-family: "Gilroy-Bold";
+  font-size: 20px;
+  line-height: 24px;
+  margin-left: 23px;
+}
+
+.date p span {
+  color: #fce559;
+}
+
+.btns {
+  display: flex;
+  justify-content: center;
+}
+
+.btns button {
+  width: 254px;
+  background: #ffffff;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+  height: 56px;
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 21px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #000000;
+  margin-left: 30px;
+  margin-bottom: 19px;
+}
+
+.btns button:hover {
+  background: linear-gradient(75.93deg, #fad264 44.82%, #fce558 70.67%);
+}
+
+.apply_text {
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 41px;
+}
+
+.bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bottom h4 {
+  font-weight: 400;
+  max-width: 468px;
+  width: 100%;
+  line-height: 19px;
+}
+
+.programms {
+  padding: 95px 0 50px;
+}
+
+.programs_title {
+  color: #320b61;
+  font-size: 36px;
+  line-height: 44px;
+}
+
+.title.programs_title::after {
+  background-color: #e130e3;
+}
+
+.program_item {
+  max-width: 1110px;
+  width: 100%;
+  margin: 0 auto 45px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.item_top,
+.item_bottom {
+  display: flex;
+}
+
+.item_bottom {
+  padding: 38px 0 25px;
+}
+
+.top_date {
+  width: 284px;
+  padding: 24px 0 17px;
+  background: #fad264;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #42196d;
+}
+
+.top_job {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  flex-grow: 1;
+  background: #320b61;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  font-feature-settings: "tnum" on, "lnum" on;
+}
+
+.bottom_left {
+  margin-right: 31px;
+}
+
+.bottom_right-list ul li {
+  padding-left: 45px;
+  margin-bottom: 30px;
+  font-size: 18px;
+  line-height: 21px;
+  font-feature-settings: "tnum" on, "lnum" on;
+  position: relative;
+}
+
+.bottom_right-list ul li span {
+  font-family: "Gilroy-Bold";
+  font-weight: 700;
+}
+
+.bottom_right-list ul li::before {
+  content: "";
+  background-image: url(../img/list_icon.png);
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.bottom_right-result {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  font-family: "Gilroy-Bold";
+  margin-bottom: 25px;
+}
+
+.bottom_right-resultList ul li {
+  max-width: 767px;
+  width: 100%;
+  padding-left: 19px;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.bottom_right-resultList ul li::before {
+  content: "";
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #42196d;
+  position: absolute;
+  top: 4px;
+  left: 0;
+}
+
+.marafon {
+  background: #42196d;
+  padding: 90px 0;
+}
+
+.marafon_title {
+  color: #fad264;
+  font-size: 36px;
+  line-height: 44px;
+}
+
+.marafon_title::after {
+  background-color: #fff;
+}
+
+.marafon_cards {
+  display: flex;
+  margin-top: 100px;
+}
+
+.card_content {
+  max-width: 349px;
+  width: 100%;
+  margin: 0 34px 34px 0;
+}
+
+.card_wrapper {
+  border-radius: 40px;
+  background-color: #fff;
+  padding-bottom: 24px;
+  position: relative;
+  height: 500px;
+}
+
+.card_wrapper::after {
+  content: "";
+  width: 47px;
+  height: 30px;
+  background-image: url(../img/arrow_down.png);
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.card_top {
+  font-family: "Gilroy-Bold";
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: #292841;
+  mix-blend-mode: normal;
+  margin: 33px 0 17px;
+}
+
+.card_bottom {
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: #292841;
+}
+
+.card_title {
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: #fff;
+  margin: 22px 0 13px;
+}
+
+.card_content ul li {
+  padding-left: 45px;
+  margin-bottom: 17px;
+  font-size: 18px;
+  line-height: 21px;
+  color: #ffffff;
+  position: relative;
+}
+
+.card_content ul li::before {
+  content: "";
+  width: 30px;
+  height: 30px;
+  background-image: url(../img/marafon_icon.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+@media (max-width: 1535px) {
+  .pattern.right {
+    display: none;
+  }
+}
+
+@media (max-width: 1200px) {
+  .pattern.left {
+    left: 32px;
+    top: 640px;
+  }
+  .marafon_cards{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .card_wrapper img{
+    width: 100%;
+  }
+}
+
+@media (max-width: 992px) {
+  .pattern.left {
+    left: 32px;
+    top: 640px;
+  }
+  .top {
+    flex-direction: column;
+    align-items: center;
+  }
+  .title {
+    font-size: 36px;
+    line-height: 44px;
+  }
+}
+
+@media (max-width: 768px){
+  .item_top{
+    display: none;
+  }
+  .item_bottom{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .program_item{
+    padding: 50px;
+  }
+  .bottom_left img{
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .pattern.left {
+    display: none;
+  }
+  .date p {
+    text-align: left;
+  }
+  .btns {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .btns button {
+    margin-left: 0;
+  }
+  .top h3 {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .title {
+    font-size: 30px;
+    line-height: 36px;
+  }
+  .card{
+    width: 100%;
+    margin: 0;
+    margin-bottom: 40px;
+  }
+  .bottom h4{
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 375px) {
+  .title{
+    font-size: 25px;
+    line-height: 33px;
+  }
+  .subtitle{
+    font-size: 20px;
+    line-height: 21px;
+  }
+}
